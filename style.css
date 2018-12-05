@@ -1,0 +1,80 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 1.8em;
+    color: #666666;
+}
+
+.pimage1,
+.pimage2,
+.pimage3 {
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimage1 {
+    background-image: url("images/Women-on-rock-platform-viewing-city.jpeg");
+    min-height: 100%;
+}
+
+.pimage2 {
+    background-image: url("images/city-cars-road-houses.jpg");
+    min-height: 400px;
+}
+
+.pimage3 {
+    background-image: url("images/Side-view-of-women-in-illuminated-city-in-night.jpeg");
+    min-height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666666;
+}
+
+.section-dark {
+    background-color: #283e34;
+    color: #dddddd;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+@media(max-width:568px) {
+    .pimage1,
+    .pimage2,
+    .pimage3 {
+        background-attachment: scroll;
+    }
+}
